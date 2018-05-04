@@ -1,4 +1,6 @@
+import greenfoot.*;
+import java.util.*;
 
-public class UFO {
-
+public class UFO extends Octopus {
+	
 }

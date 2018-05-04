@@ -6,6 +6,7 @@ import greenfoot.*;
 public class Octopus extends Actor{
 	
 	/**
+	 * new comment here
      * Act - do whatever the Enemy1 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
