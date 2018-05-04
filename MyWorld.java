@@ -19,21 +19,4 @@ public class MyWorld extends World
         super(600, 400, 1); 
     }
     
-    public void putActors() {
-    		for (int i = 0; i < 10; i++) {
-    			Squid s = new Squid();
-    			squids.add(s);
-    			this.addObject(s, i*10+1, 10);
-    		}
-    		for (int i = 0; i < 10; i++) {
-    			Squid s = new Squid();
-    			squids.add(s);
-    			this.addObject(s, i*10+1, 10);
-    		}
-    		for (int i = 0; i < 10; i++) {
-    			Squid s = new Squid();
-    			squids.add(s);
-    			this.addObject(s, i*10+1, 10);
-    		}
-    }
 }
