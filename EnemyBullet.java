@@ -32,8 +32,8 @@ public class EnemyBullet extends Actor {
         	setImage((String) null);
         	
         }
-        if (getOneIntersectingObject(Actor.class).equals(Player.class)) {
-        	
+        if (getOneIntersectingObject(Actor.class).equals(Ship.class)) {
+        	setImage((String) null);
         }
     }
 
