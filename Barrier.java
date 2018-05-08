@@ -1,6 +1,6 @@
 import greenfoot.*;
 
-public class Barrier extends Actor{
+public class Barrier extends Actor {
 	
 	//4 images used based on the amount of times its hit
     public int num =4;
