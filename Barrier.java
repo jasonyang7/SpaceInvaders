@@ -23,30 +23,7 @@ public class Barrier extends Actor {
         
     public void act() 
     {
-       List bullets = getNeighbours(5, false, EnemyBullet.class); 
-       if (!bullets.isEmpty()) { 
-       Actor bullet = (Actor) bullets.get(0); 
-       if (bullet instanceof EnemyBullet) { 
-           getWorld().removeObject(bullet); 
-           num--;
-           if (num <= 0) { // basically barrier has been hit enough times
-               getWorld().removeObject(this);
-           } else {
-               if (num == 3) 
-               {
-                   setImage(img2); 
-                }
-               else if (num == 2) 
-               {
-                   setImage(img3); 
-               }
-               else if (num == 1) 
-               {
-                   setImage(img4); 
-               }
-            }
-       }
-       } 
+       
     }
 
 }

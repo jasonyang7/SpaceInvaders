@@ -28,13 +28,12 @@ public class EnemyBullet extends Actor {
      * The bullet hits the player
      */
     private void destroy() {
-        if (getOneIntersectingObject(Actor.class).equals(Barrier.class)) {
+    	Actor intersect = getOneIntersectingObject(EnemyBullet.class);
+        if (intersect.equals(Barrier.class)) {
         	setImage((String) null);
-        	
         }
-        if (getOneIntersectingObject(Actor.class).equals(Ship.class)) {
+        if (intersect.equals(Ship.class)) {
         	setImage((String) null);
         }
     }
-
 }
