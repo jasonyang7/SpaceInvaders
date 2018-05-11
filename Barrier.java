@@ -3,27 +3,37 @@ import greenfoot.*;
 public class Barrier extends Actor {
 	
 	//4 images used based on the amount of times its hit
-    public int num =4;
+    public int damage = 0;
     
-    private GreenfootImage img1;
-    
-    private GreenfootImage img2;
-    
-    private GreenfootImage img3;
-    
-    private GreenfootImage img4;
+    private GreenfootImage img0, img1, img2, img3;
     
     public Barrier()
     {
-        img1 = getImage();
-        img2 = new GreenfootImage("barrier-2.gif");
-        img3 = new GreenfootImage("barrier-3.gif");
-        img4 = new GreenfootImage("barrier-4.gif");
+        img0 = new GreenfootImage("images/barrier0.jpeg");
+        img1 = new GreenfootImage("images/barrier1.jpeg");
+        img2 = new GreenfootImage("images/barrier2.jpeg");
+        img3 = new GreenfootImage("images/barrier3.jpeg");
+        setImage(img0);
     }
         
     public void act() 
     {
-       
+    	Actor intersect = getOneIntersectingObject(Barrier.class);
+    	if (intersect.equals(EnemyBullet.class)) {
+    		damage++;
+    	}
+    	if (damage == 1) {
+    		setImage(img1);
+    	}
+    	else if (damage == 2) {
+    		setImage(img2);
+    	}
+    	else if (damage == 3) {
+    		setImage(img3);
+    	}
+    	else {
+    		setImage((String) null);
+    	}
     }
 
 }

@@ -1,27 +1,37 @@
-import greenfoot.Actor;
+import java.util.*;
+import greenfoot.*; // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-public class PlayerBullet extends Actor{
-	
-	/**
-     * Act - do whatever the pbullet wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+
+public class PlayerBullet extends Actor
+{
+
     private Ship ship;
-    
-    public void act() 
+
+    public GreenfootImage img1;
+
+
+    public void PlayerBullet()
     {
-       int y = getY();
-       y = y-3;
-       setLocation(getX(), y);
-       
-       if (getY() == 0) {
-           destroy();
+        img1 = new GreenfootImage( "PLAYERBULLET" );
+    }
+
+
+    public void act()
+    {
+        int y = getY();
+        y = y - 4;
+        setLocation( getX(), y );
+        if ( getY() == 0 )
+        {
+            destroy();
         }
-    }    
-    
-    private void destroy() {
-        ((Space) getWorld()).ShootSet(1);
-        getWorld().removeObject(this);
+
+    }
+
+
+    private void destroy()
+    {
+        getWorld().removeObject( this );
     }
 
 }

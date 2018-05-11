@@ -1,4 +1,7 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import java.util.LinkedList;
+
+
+import greenfoot.*;
 import java.util.*;
 
 /**
@@ -9,20 +12,69 @@ import java.util.*;
  */
 public class Space extends World
 {
-
-	/**
-     * Constructor for objects of class Space.
-     * 
-     */
+	
+	public int shot = 1;
+    
+    public int invaders = 50;
+    
+    NumberListener score = new NumberListener("Score: ");
+    
+    NumberListener lives = new NumberListener("Lives: ");
+    
     public Space()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1); 
+        
+        super(100, 100, 5); 
+        addObject(new Ship(), 50, 90);
+        addObject(new Barrier(), 75, 70);
+        addObject(new Barrier(), 50, 70);
+        addObject(new Barrier(), 25, 70);
+        addObject(score, 15, 90);
+        addObject(lives, 95, 90);
+        lives.add(3);
+        populate();
+    }
+    
+    public void SetShoot(int num)
+    {
+        shot = num;
+    }
+    
+    public boolean CanShoot()
+    {
+        return shot == 1;
+    }
+    
+    public void addPoints(int pts)
+    {
+        score.add(pts);
+    }
+    
+    public void die()
+    {
+        lives.subtract(1);
+        if (lives.getValue() == 0) {
+            gameOver();
+        }
+         
+        addObject(new Ship(), 50, 90);
+        shot = 1;
+    }
+    
+    public void gameOver() 
+    {
+        addObject(new GameOverScore(score.getValue()), getWidth()/2, getHeight()/2);
+        Greenfoot.stop();
+    }
+    
+    public void addUFO()
+    {
+    	addObject(new UFO(), 5, 10);
     }
     
     public void populate()
     {
-        addObject(new UFO(), 5, 10);
+        
         
         LinkedList<Squid> squids = new LinkedList<Squid>();
         for ( int i = 0; i <10; i++ ) {
@@ -60,6 +112,6 @@ public class Space extends World
             addObject(octo, (i*5)+5, 30);
         }
         
-        
+        invaders = 50;
     }
 }
