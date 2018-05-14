@@ -37,12 +37,6 @@ public class Octopus extends Actor{
     public void act() 
     {
        List<PlayerBullet> bullets = getNeighbours(3, false, PlayerBullet.class); 
-       ufoTimer++;
-       if (ufoTimer > 50)
-       {
-    	   ((Space) getWorld()).addUFO();
-    	   ufoTimer = 0;
-       }
        if (!bullets.isEmpty()) 
        {
     	   Space world = (Space) getWorld();

@@ -13,7 +13,7 @@ import java.util.*;
 public class Space extends World
 {
 	
-	public int shot = 1;
+	public int shot = 1, ufoTimer = 0;
     
     public int invaders = 50;
     
@@ -33,6 +33,14 @@ public class Space extends World
         addObject(lives, 95, 90);
         lives.add(3);
         populate();
+    }
+    
+    public void act() {
+    	ufoTimer++;
+    	if (ufoTimer == 50) {
+    		addUFO();
+    		ufoTimer = 0;
+    	}
     }
     
     public void SetShoot(int num)

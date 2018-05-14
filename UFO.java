@@ -33,7 +33,7 @@ public class UFO extends Actor
     
     public void destroy()
     {
-        ((Space) getWorld()).addPoints((int) (Math.random()*50 + 100)); 
+        ((Space) getWorld()).addPoints((int)Math.random()*50 + 100); 
         getWorld().removeObject(this);
     }
     
