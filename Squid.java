@@ -1,22 +1,28 @@
-import greenfoot.*;
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-public class Squid extends Octopus{
-	
-	public Squid()
+/**
+ * Write a description of class Squid here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class Squid extends Octopus
+{
+    public Squid()
     {
-        img1 = new GreenfootImage("squidnormal.jpeg");
-        img2 = new GreenfootImage("squidhit.jpeg");
+        img1 = getImage();
+        img2 = new GreenfootImage("octopus-2.gif");
     }
     
     public void destroy() 
     {
-        Space world = ((Space) getWorld());
-        world.addPoints(30); 
+        MyWorld world = ((MyWorld) getWorld());
+        getWorld().addObject(new DeadAlien(this), getX(), getY());
+        world.addPoints(40); 
         world.invaders--;
         if (world.invaders == 0) {
-            ((Space) getWorld()).populate();
+            ((MyWorld) getWorld()).populate();
         }
         getWorld().removeObject(this); 
-    }
-
+    }   
 }

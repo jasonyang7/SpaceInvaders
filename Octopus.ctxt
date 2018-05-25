@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.target=Octopus
+comment0.text=\r\n\ The\ basic\ alien\ class,\ also\ the\ alien\ on\ the\ bottom-most\ and\ second\ to\ bottom\ levels.\r\n\ \r\n\ @author\ Jason\ Yang,\ Sai\ Enduri,\ Krish\ G\r\n\ @version\ 5/24/2018\r\n
+comment1.params=
+comment1.target=Octopus()
+comment1.text=\r\n\ Sets\ the\ two\ images\ of\ the\ Octopus\ and\ initilizes\ the\ move\ distance\ to\ 4\ pixels.\ \r\n
+comment10.params=
+comment10.target=void\ switchOthersLeft()
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ The\ octopus\ shoots,\ sets\ the\ \r\n
+comment3.params=
+comment3.target=void\ destroy()
+comment4.params=
+comment4.target=void\ changeSpeed()
+comment5.params=
+comment5.target=void\ shoot()
+comment6.params=
+comment6.target=void\ move()
+comment7.params=
+comment7.target=void\ switchDirectionR()
+comment8.params=
+comment8.target=void\ switchDirectionL()
+comment9.params=
+comment9.target=void\ switchOthersRight()
+numComments=11

@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=EnemyBullet
+comment0.text=\r\n\ The\ Enemy\ Bullet\ tries\ to\ hit\ the\ player,\ and\ it\ also\ destroys\ the\ barriers.\r\n\ \r\n\ @author\ Jason\ Yang,\ Sai\ Enduri,\ Krish\ G\r\n\ @version\ 5/24/2018\r\n
+comment1.params=
+comment1.target=EnemyBullet()
+comment1.text=\r\n\ Sets\ the\ two\ images.\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Makes\ the\ bullet\ move\ one\ pixel\ up\ and\ alternates\ the\ image.\r\n
+comment3.params=
+comment3.target=void\ destroy()
+comment3.text=\r\n\ Removes\ the\ object\ from\ the\ world.\r\n
+numComments=4

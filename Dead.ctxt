@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Dead
+comment0.text=\r\n\ Plays\ an\ animation\ when\ the\ spaceship\ dies.\r\n\ \r\n\ @author\ Jason\ Yang,\ Sai\ Enduri,\ Krish\ G\r\n\ @version\ 5/24/2018\r\n
+comment1.params=
+comment1.target=Dead()
+comment1.text=\r\n\ Initiates\ the\ time\ to\ zero\ and\ sets\ the\ two\ images.\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Waits\ for\ twenty\ five\ acts,\ then\ the\ object\ is\ removed\ from\ the\ grid.\r\n
+numComments=3

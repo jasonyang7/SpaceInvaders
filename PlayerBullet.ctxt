@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=PlayerBullet
+comment0.text=\r\n\ The\ bullet\ that\ the\ player\ shoots.\ It\ is\ shot\ when\ the\ player\ hits\ the\ up\ arrow\ key,\ and\ it\ is\ dissolved\ when\ it\ either\ hits\ the\ top\ of\ \r\n\ the\ screen\ or\ hits\ an\ alien.\r\n\ \r\n\ @author\ Jason\ Yang,\ Sai\ Enduri,\ Krish\ G\r\n\ @version\ 5/24/2018\r\n
+comment1.params=
+comment1.target=void\ act()
+comment1.text=\r\n\ The\ player\ bullet\ moves\ three\ pixels\ upward,\ and\ it\ is\ updated\ each\ pixel\ it\ moves\ up.\ When\ it\ reaches\ the\ edge\ of\ the\ screen,\ \r\n
+comment2.params=
+comment2.target=void\ destroy()
+comment2.text=\r\n\ The\ bullet\ is\ removed\ from\ the\ world.\r\n
+numComments=3

@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=DeadAlien
+comment0.text=\r\n\ The\ animation\ that\ plays\ when\ an\ alien\ dies.\r\n\ \r\n\ @author\ Jason\ Yang,\ Sai\ Enduri,\ Krish\ G\r\n\ @version\ 5/24/2018\r\n
+comment1.params=oct
+comment1.target=DeadAlien(Octopus)
+comment1.text=\r\n\ Constructs\ the\ DeadAlien\ to\ be\ in\ the\ place\ of\ the\ dead\ alien,\ with\ the\ direction\ and\ movement\ set\ to\ be\ the\ same\ as\ the\ alien.\r\n\ \r\n\ @param\ oct\ the\ dead\ Alien\ that\ is\ passed\ in\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Makes\ the\ DeadAlien\ move\ for\ ten\ act\ calls,\ then\ removes\ itself\ from\ the\ world.\r\n
+comment3.params=
+comment3.target=void\ move()
+comment3.text=\r\n\ The\ DeadAlien\ moves\ exactly\ the\ same\ as\ the\ octopus\ class.\r\n
+comment4.params=
+comment4.target=void\ switchDirectionR()
+comment4.text=\r\n\ Switches\ the\ DeadAlien's\ direction\ to\ the\ right.\r\n
+comment5.params=
+comment5.target=void\ switchDirectionL()
+comment5.text=\r\n\ Switches\ the\ DeadAlien's\ direction\ to\ the\ left.\r\n
+numComments=6

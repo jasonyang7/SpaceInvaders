@@ -1,12 +1,14 @@
-import greenfoot.Actor;
-import greenfoot.Color;
-import greenfoot.Font;
-import greenfoot.GreenfootImage;
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
+/**
+ * Write a description of class NumberListener here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
 public class NumberListener extends Actor
 {
-	
-	private int value = 0;
+    private int value = 0;
     private String text = "";
     private int stringLength;
     
@@ -17,7 +19,7 @@ public class NumberListener extends Actor
         setImage(new GreenfootImage(stringLength, 24));
         GreenfootImage image = getImage();
         Font font = image.getFont();
-        image.setFont(font.deriveFont(36.0F));  // use larger font
+        image.setFont(font.deriveFont(24.0F));
         image.setColor(Color.WHITE);
         
         updateImage();
@@ -52,7 +54,5 @@ public class NumberListener extends Actor
         GreenfootImage image = getImage();
         image.clear();
         image.drawString(text + value, 2, 20);
-    }
-	
+    }    
 }
-

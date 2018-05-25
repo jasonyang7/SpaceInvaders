@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Barrier
+comment0.text=\r\n\ The\ barrier\ protects\ the\ player\ from\ enemy\ bullets.\r\n\ \r\n\ @author\ Jason\ Yang,\ Sai\ Enduri,\ Krish\ G\ \r\n\ @version\ 5/24/2018\r\n
+comment1.params=
+comment1.target=Barrier()
+comment1.text=\r\n\ Barrier\ constructor\ has\ the\ four\ barrier\ images\ and\ increases\ their\ height\ and\ width\ by\ 10\ pixels.\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ The\ class\ takes\ note\ whenever\ an\ enemy\ bullet\ or\ player\ bullet\ hits\ the\ barrier.\r\n\ Every\ three\ times\ that\ the\ bullet\ hits\ the\ barrier,\ the\ barrier\ changes\ image.\r\n
+numComments=3

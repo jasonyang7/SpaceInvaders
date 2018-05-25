@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Crab
+comment0.text=\r\n\ The\ crab\ is\ the\ alien\ in\ the\ third\ and\ fouth\ layers\ of\ the\ alien\ team.\r\n\ \r\n\ @author\ Jason\ Yang,\ Sai\ Enduri,\ Krish\ G\r\n\ @version\ 5/24/2018\r\n
+comment1.params=
+comment1.target=Crab()
+comment1.text=\r\n\ Sets\ the\ two\ images.\r\n
+comment2.params=
+comment2.target=void\ destroy()
+comment2.text=\r\n\ Gives\ the\ player\ twenty\ points,\ plays\ the\ dead\ alien\ animation,\ and\ updates\ the\ remaining\ number\ of\ invaders.\r\n
+numComments=3

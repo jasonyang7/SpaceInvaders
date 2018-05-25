@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=GameOverScore
+comment0.text=\r\n\ Keeps\ track\ of\ the\ user's\ score.\r\n\ \r\n\ @author\ Jason\ Yang,\ Sai\ Enduri,\ Krish\ G\r\n\ @version\ 5/24/2018\r\n
+comment1.params=
+comment1.target=GameOverScore()
+comment1.text=\r\n\ Creates\ a\ score\ board\ with\ dummy\ result\ for\ testing.\r\n
+comment2.params=score
+comment2.target=GameOverScore(int)
+comment2.text=\r\n\ Creates\ a\ score\ board\ for\ the\ final\ result.\r\n
+comment3.params=title\ prefix\ score
+comment3.target=void\ makeImage(java.lang.String,\ java.lang.String,\ int)
+comment3.text=\r\n\ Makes\ the\ score\ board\ image.\r\n
+numComments=4
